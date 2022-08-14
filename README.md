@@ -1,3 +1,3 @@
 # Pre-DAW
-Landing page desenvlvida num minicurso oferecido por um colega de faculdade,
+Landing page desenvolvida num minicurso oferecido por um colega de faculdade,
 como preparatório para a disciplina de Desenvolvimento de Aplicações Web, funcionando também, como revisão de frontend.
