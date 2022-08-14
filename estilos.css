@@ -1,0 +1,236 @@
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 30px 150px 0px 150px;
+}
+
+/*adotando FLEXBOX e CASCATA*/
+#cabecalho nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cabecalho ul li {
+    list-style: none;
+    display: inline-block; 
+}
+
+#cabecalho ul li a{
+    font-weight: bold;
+    color:#140d14;
+    margin: 0px 10px;
+}
+#cabecalho ul li a:hover{
+    color: green;
+    transition: all 0.5s;
+}
+
+#cabecalho nav ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(128, 136, 243);
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* HEADER */
+
+header {
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #140d14;
+}
+
+/* MAIN */
+.btn {
+    display: flex;
+    background-color: red;
+
+    border: none;
+    border-radius: 10px;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn a {
+    color: rgb(11, 35, 88);
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+}
+
+.btn:hover {
+    background-color: brown;
+}
+
+.btn-social{
+    background-color: aquamarine;
+    margin-left: 10px;
+}
+
+.btn-social:hover {
+    background-color: blue;
+}
+
+.btn-social a{
+    color: black;
+}
+
+#logo_whatsapp, #logo_email {
+    width: 25px;
+    height: 25px;
+}
+
+main {
+    display: flex;
+    height: 100vh; /*viewport height - campo de visao do user*/
+    justify-content: space-around; /*espaço entre elementos*/
+    align-items: center; 
+}
+
+#texto-principal h1 {
+    font-size: 64px;
+}
+
+#botoes {
+    display: flex;
+}
+
+#contato {
+    display: flex;
+    height: 100vh; /*viewport height - campo de visao do user*/
+    justify-content: space-around; /*espaço entre elementos*/
+    align-items: center;
+    text-align: center;
+}
+
+#contato h1{
+    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.texto-chamada {
+    font-size: 24px;
+}
+
+#texto-principal h1{
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#texto-principal p{
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+}
+
+#texto-principal {
+    width: 30%;
+    text-align: center;
+}
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(73, 118, 214);
+    width: 100%;
+}
+
+footer p {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Midia  Query - Responsividade*/
+/* submeter a determinadas dimensões de dispositivos, caracteristicas de estilização (para se adaptar)*/
+
+@media all and (min-device-width: 320px) and (max-device-width: 670px)
+{
+
+    /*ESTILOS GERAIS*/
+    .container {
+        padding: 30px 50px 0px 50px;
+    }
+
+    .btn a{
+        font-size: 32px;
+    }
+
+    /* HEADER */
+    #cabecalho ul li a {
+        font-size: 22px;
+    }
+
+    #logo {
+        font-size: 40px;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #texto-principal {
+        width: 100%;
+    }
+
+    #texto-principal h1{
+        font-size: 80px;
+        text-align: center;
+    }
+
+    /*CONTATO*/
+
+    #contato {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #contato h1{
+        font-size: 80px;
+    }
+
+    .texto-chamada {
+        font-size: 48px;
+    }
+
+    #contato #botoes{
+        justify-content: center;
+    }
+
+    .btn-social a{
+        padding: 30px;
+    }
+
+    .btn-social img{
+        padding: 0px;
+    }
+
+    footer {
+        padding: 60px 0px;
+    }
+
+    footer a {
+        font-size: 48px;
+        text-align: center;
+    }
+    
+}
